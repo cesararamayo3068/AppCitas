@@ -1,16 +1,24 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
+//Componentes
 import { AppComponent } from './app.component';
+import { ListCitasComponent } from './components/list-citas/list-citas.component';
+import { CrearCitaComponent } from './components/crear-cita/crear-cita.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListCitasComponent,
+    CrearCitaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
